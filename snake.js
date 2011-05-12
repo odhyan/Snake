@@ -19,7 +19,7 @@ odhyan.SnakeGame = (function() {
     * Constants for directions
     */
     var UP = 1,
-        RIGHT = 2;
+        RIGHT = 2,
         DOWN = 3,
         LEFT = 4;
     
@@ -62,7 +62,7 @@ odhyan.SnakeGame = (function() {
         this.col = c; //column of food position
         this.len = l; //additional length this food will give to the snake
         this.score = score; //score added to total score when this food is eaten
-        this.color = FOODCOLOR //color of food
+        this.color = FOODCOLOR; //color of food
     };
     
     /*
@@ -74,7 +74,7 @@ odhyan.SnakeGame = (function() {
         this.score = score; //score added to total score when this bonus is taken
         this.time = tim; //how long the bonus will stay before disappearing if not eaten
         this.color = BONUSCOLOR;
-    }
+    };
     
     /*
     * @class Poison
